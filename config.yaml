@@ -1,0 +1,22 @@
+# This file contains the settings to the script.
+# This file can be changed without changing the code,
+# but you can only safely change the values after the ":",
+# for example: "username: 'Sample_user'" can safely
+# be changed to "username: 'New_user'", but you can't change
+# "username:'Sample_user'" to 'user: 'Sample_user'" without
+# changing the code of myio.py file.
+
+mode: training # Options: training or actual for BOOM/AMIGO platform
+
+credentials: # Contains credentials for logging into BOOM/AMIGO platform
+  username: 'Sample_user' 
+  password: 'Sample_password'
+
+persistance:
+  max_tries: 10 # Determines how many times the program will try to do an action (e.g. click) before raising an exception
+  timeout: 20 # Determines how many seconds the script will wait for a page to load before declaring a timeout
+  boom_delay: 2 # Determines how many seconds the script will wait because of BOOM/AMIGO instablity
+
+logging:
+  level: INFO # Options: DEBUG, INFO, ERROR; this setting controls how detailed the logs are.
+  to_console: true # Options: true, false; controls whether the logs are just printed to the file or also printed to the console.

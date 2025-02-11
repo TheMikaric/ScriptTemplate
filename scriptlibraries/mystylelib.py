@@ -2,7 +2,7 @@ import logging
 
 logging.basicConfig(
         level=logging.DEBUG,
-        format=f'%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        format='%(asctime)s - %(name)10s - %(levelname)10s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         filename='logs/main.log')
 
