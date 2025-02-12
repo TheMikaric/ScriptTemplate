@@ -6,7 +6,9 @@
 # "username:'Sample_user'" to 'user: 'Sample_user'" without
 # changing the code of myio.py file.
 
-mode: training # Options: training or actual for BOOM/AMIGO platform
+boom_settings:
+  platform: training # Options: training or actual for BOOM/AMIGO platform
+  mode: 'maintenance' # Options: maintanance or asset for BOOM/AMIGO platform, depending on tasks to perform
 
 credentials: # Contains credentials for logging into BOOM/AMIGO platform
   username: 'Sample_user' 
