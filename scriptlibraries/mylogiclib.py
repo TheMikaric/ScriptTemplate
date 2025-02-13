@@ -16,26 +16,38 @@ logging.basicConfig(
 logger = logging.getLogger('logiclib')
 logger.setLevel(logging.DEBUG)
 
-# Opens chrome and BOOM/AMIGO, logs in with the given parameters and returns driver and action_chains
+
 def start_driver(username,password,mode,platform,short_sleep=1,timeout=10): 
+    '''Starts up Chrome browser, logins to Amigo and returns driver
+        
+        Inputs:
+        string username, the credential for the Boom account
+        string subfolder, the credential for the Boom account
+        string mode, determines if the maintenance or asset Boom is acessed
+        string platform, determines if the training or the actual enviornment is acessed
+        
+        Output:
+        driver, the Selenium library object
+        action_chains, Selenium object
+        '''
     logger.debug("Entered start_driver function")
 
     chrome_options = Options()
     driver = webdriver.Chrome(options=chrome_options) # Opens chrome window
     extension = '-training' if mode=="training" else ''
-    driver.get(f'https://amigo{extension}.eucorail.com/{platform}') # 
-    logging.debug("Driver got Amigo login page URL")
+    driver.get(f'https://amigo{extension}.eucorail.com/{platform}')
     action_chains = ActionChains(driver)
     logger.debug("Driver made action chains")
 
     #Log in
-    WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.ID,"un"))).send_keys(username)
-    logger.debug("Entered username")
-    time.sleep(short_sleep)
-    WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.NAME,"Password"))).send_keys(password)
-    logger.debug("Entered password")
-    driver.find_element(By.CLASS_NAME, "login-button").click() #Click login button to actually login
-    logger.info("Logged in")
+    try:
+        WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.ID,"un"))).send_keys(username)
+        time.sleep(short_sleep)
+        WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.NAME,"Password"))).send_keys(password)
+        driver.find_element(By.CLASS_NAME, "login-button").click() #Click login button to actually login
+        logger.info("Logged in")
+    except Exception as e:
+        logger.error(f'Failed to log in, error: {e}')
 
     logger.debug("Exiting start_driver function")
     return driver,action_chains
