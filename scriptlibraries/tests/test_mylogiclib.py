@@ -20,6 +20,11 @@ class TestMylogiclibpy(ut.TestCase):
 
     def test_read_pdf(self):
         self.assertEqual(lib.read_pdf('sample.pdf','scriptlibraries\\tests'),'sample! ')
+        self.assertEqual(lib.read_pdf('sample_cyrilic_content.pdf','scriptlibraries\\tests'),'Ћирлилица бајо :0 ')
+        self.assertEqual(lib.read_pdf('Ћирличнинасловуву.pdf','scriptlibraries\\tests'),'Osvete celave latinice ')
+        self.assertEqual(lib.read_pdf('razmaknuti test.pdf','scriptlibraries\\tests'),'razmaknuti ')
+        with self.assertRaises(FileNotFoundError):
+            lib.read_pdf('nepostojeci.pdf')
 
 if __name__=='__main__':
     ut.main()
