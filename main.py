@@ -1,6 +1,7 @@
 import scriptlibraries.myui as ui
 import scriptlibraries.myio as io 
 import scriptlibraries.mymainlogic as logic
+import scriptlibraries.myio as io
 import logging #2024-11-30_Wiederinbetriebnahme_2463.022_signiert.pdf
 
 logging.basicConfig(
@@ -12,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger('Main')
 logger.setLevel(logging.DEBUG)
 
-pdfstxt = logic.read_all_pdfs(input("The name of the subfolder where the files are located\n\
+pdfstxt = io.read_all_pdfs(input("The name of the subfolder where the files are located\n\
 The folder must be in the same folder from where this script is being run! : "),echo=True)
 fleet = input("Which fleet are you reading the reports for:\n Options: ABY, Desiro, Mireo, FLIRT:")
 firstpass=True

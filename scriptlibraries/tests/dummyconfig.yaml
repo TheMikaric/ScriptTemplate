@@ -1,0 +1,19 @@
+# this is a dummy config file for testing purposes
+# if you see any of the comments in the program output, something has gone wrong!
+
+boom_settings:
+  platform: '1' # Options: training or actual for BOOM/AMIGO platform
+  mode: '2' # Options: maintanance or asset for BOOM/AMIGO platform, depending on tasks to perform
+
+credentials: # Contains credentials for logging into BOOM/AMIGO platform
+  username: '3' 
+  password: '4'
+
+persistance:
+  max_tries: 5 # Determines how many times the program will try to do an action (e.g. click) before raising an exception
+  timeout: 6 # Determines how many seconds the script will wait for a page to load before declaring a timeout
+  boom_delay: 7 # Determines how many seconds the script will wait because of BOOM/AMIGO instablity
+
+logging:
+  level: false # Options: DEBUG, INFO, ERROR; this setting controls how detailed the logs are.
+  to_console: true # Options: true, false; controls whether the logs are just printed to the file or also printed to the console.

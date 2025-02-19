@@ -8,9 +8,8 @@ from selenium.webdriver.common.by import By
 import selenium.common.exceptions as sce
 import csv
 import time
-from pypdf import PdfReader
 import re
-import os
+
 
 logging.basicConfig(
         level=logging.ERROR,
@@ -58,46 +57,6 @@ def start_driver(username,password,mode:str,platform:str,short_sleep=1,timeout=1
     logger.debug("Exiting start_driver function")
     return driver,action_chains
 
-def resolve_file_name(file_name:str,subfolder:str)->str:
-    '''This function joins file_name and subfolder strings with character '\' ,
-    and returns just the file_name if empty or no subfolder is provided'''
-    if not file_name: raise NameError('No file_name provided!')
-    if not subfolder:
-        return file_name
-    elif subfolder=='':
-        logger.warning(f'No subfolder for the resolve_file_name with file_name={file_name} provided!')
-        return file_name
-    else:
-        return f'{subfolder}\{file_name}'
-
-def read_pdf(file_name,subfolder='inputs',echo=False):
-    '''Takes in the name of the file and its subfolder within the script, and returns all text contained in the pdf.
-    Returns None in the event that a file isn't a pdf file.'''
-
-    if not 'pdf' in file_name:
-        logger.warning(f'File {file_name} is not a PDF file, skipping it from read_pdf function!')
-        return
-    
-    destination = resolve_file_name(file_name,subfolder)
-    logger.info(f'Attempting to read pdf from read_pdf function with a destination {destination}')
-    to_return = ''
-    try:
-        reader = PdfReader(destination)
-    except FileNotFoundError:
-        raise FileNotFoundError('File not found in read_pdf function, even after resolving file name {destination}.')
-    if echo: print(f'Attempting to read pdf from read_pdf function with a destionation {destination}')
-    for page in reader.pages:
-        if echo: print(page.extract_text())
-        to_return+=page.extract_text() # Pages usually have '\n' and ' ' characters between them
-    return to_return
-
-def read_all_pdfs(subfolder:str='inputs',echo=False):
-    '''Takes in the name of the subfolder, and returns all the text from all the files in a list,
-    each member of a list being complete text of a file.'''
-    
-    for_return = [read_pdf(f,subfolder=subfolder,echo=echo) for f in os.listdir(subfolder) if os.path.isfile(os.path.join(subfolder,f))]
-    return for_return
-    
 def find_train_num(text:str,fleet:str)->str:
     '''Returns a frist appearance of a train number belonging to a given fleet from a given text.
     Supported fleets: Desiro, Mireo, ABY, FLIRT'''
@@ -116,7 +75,7 @@ def find_train_num(text:str,fleet:str)->str:
         
     return to_return
 
-def extract_between_strings(text,string1,string2):
+def extract_between_strings(text:str,string1,string2)->list[str]:
     '''Extracts text that is contained between string1 and string2 (ordered)'''
     logger.debug(f'Etntered extract_between_strings function with text and string1={string1} string2={string2}')
     if string2!="": 
@@ -125,17 +84,6 @@ def extract_between_strings(text,string1,string2):
         pattern = re.escape(string1)+r'\s*(.*?) ' # NEEDS TO INCLUDE A SINGLE SPACE AFTER STRING IN THIS CASE
         logger.debug("String2 was empty, so the alternative RegEx statement is being used.")
     return re.findall(pattern, text, re.DOTALL)
-
-def export_to_csv(data: list[list[str]],column_names: list[str]=[""],file_name:str='output.csv',subfolder:str='outputs',mode:str='a'):
-    '''Takes in the column names and data to write to the csv file.
-    Each individual list within data input is a row, and its elements are individual elements
-    Mode options: 'a' for append, or add to the end of already existing .csv, 'w' for write to overwrite existing contents '''
-
-    with open(resolve_file_name(file_name,subfolder), mode=mode, newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        if mode == 'w': writer.writerow(column_names) # Only write column names if we are making a new file
-        writer.writerows(data)
-    pass
 
 def test():
     print("Hello, world from mylogiclib!")
