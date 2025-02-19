@@ -241,3 +241,321 @@
 2025-02-19 09:53:56 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
 2025-02-19 09:53:56 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
 2025-02-19 09:53:56 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:37:51 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:37:51 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:37:51 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:05 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:05 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:38:05 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:12 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:12 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:38:12 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:44 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:38:44 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:44 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:38:44 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:39:26 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:39:26 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:39:26 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:39:26 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:39:26 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:40:46 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:40:46 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:40:46 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:40:46 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:40:46 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:40:46 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:41:45 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:41:45 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:41:45 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:41:45 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:41:45 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:41:45 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:41:45 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:41:45 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:01 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:43:01 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:43:01 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:43:01 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:43:01 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:43:01 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:01 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:43:01 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:06 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:43:06 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:43:06 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:43:06 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:43:06 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:43:06 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:06 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:43:06 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:20 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:43:20 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:43:20 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:43:20 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:43:20 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:43:20 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:20 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:43:20 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:49:37 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:49:37 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:49:37 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:49:37 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:49:37 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:49:37 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:49:37 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:49:37 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:49:41 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:49:41 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:49:41 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:49:41 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:49:41 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:49:41 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:49:41 -   logiclib -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 11:49:41 -   logiclib -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 11:59:23 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 11:59:23 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 11:59:23 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 11:59:23 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 11:59:23 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 11:59:23 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 12:00:04 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 12:00:04 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 12:00:04 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 12:00:04 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 12:00:04 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 12:00:04 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:30 -         IO -    WARNING - File test_myiolib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:30 -         IO -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 12:01:30 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:45 -         IO -    WARNING - File test_myiolib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:45 -         IO -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 12:01:45 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:53 -         IO -    WARNING - File test_myiolib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:53 -         IO -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 12:01:53 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:13:19 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:13:19 -         IO -    WARNING - File dummyconfig.yaml is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:13:19 -         IO -    WARNING - File test_myiolib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:19 -         IO -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 12:13:19 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:13:19 -         IO -    WARNING - No subfolder (None object) for the resolve_file_name with file_name=file provided!
+2025-02-19 12:13:44 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:13:44 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:13:44 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:13:44 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:13:44 -         IO -    WARNING - File dummyconfig.yaml is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:13:44 -         IO -    WARNING - File test_myiolib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:44 -         IO -    WARNING - File test_mylogiclib.py is not a PDF file, skipping it from read_pdf function!
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\sample_cyrilic_content.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\\u040b\u0438\u0440\u043b\u0438\u0447\u043d\u0438\u043d\u0430\u0441\u043b\u043e\u0432\u0443\u0432\u0443.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\razmaknuti test.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination inputs\nepostojeci.pdf
+2025-02-19 12:13:44 -         IO -       INFO - Attempting to read pdf from read_pdf function with a destination scriptlibraries\tests\multipage.pdf
+2025-02-19 12:13:44 -         IO -    WARNING - No subfolder (None object) for the resolve_file_name with file_name=file provided!
+2025-02-19 12:15:54 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:15:54 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:15:54 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:15:54 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:16:08 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:16:08 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:16:08 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:16:08 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:16:47 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:16:47 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:16:47 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:16:47 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:35:38 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:35:38 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:35:38 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:35:38 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:37:44 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:37:44 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:37:44 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:37:44 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:39:10 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:39:10 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:39:10 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:39:10 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:39:10 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 12:39:10 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 12:39:10 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 12:39:10 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 12:39:10 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 12:39:10 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
+2025-02-19 12:47:32 -         IO -      DEBUG - Entered the function load_config with parameters file_name=dummyconfig.yaml and subfolder=scriptlibraries\tests
+2025-02-19 12:47:32 -         IO -      DEBUG - Config file loaded successfully
+2025-02-19 12:47:32 -         IO -      DEBUG - Exiting the load_config function
+2025-02-19 12:47:32 -         IO -      DEBUG - Entered read_all_pdfs function with parameter subfolder=scriptlibraries\tests! Will call the read_pdf function for each individual file soon...
+2025-02-19 12:47:32 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-02-19 12:47:32 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-02-19 12:47:32 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-02-19 12:47:32 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-02-19 12:47:32 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-02-19 12:47:32 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
