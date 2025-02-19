@@ -71,9 +71,15 @@ def resolve_file_name(file_name:str,subfolder:str)->str:
         return f'{subfolder}\{file_name}'
 
 def read_pdf(file_name,subfolder='inputs',echo=False):
-    '''Takes in the name of the file and its subfolder within the script, and returns all text contained in the pdf.'''
+    '''Takes in the name of the file and its subfolder within the script, and returns all text contained in the pdf.
+    Returns None in the event that a file isn't a pdf file.'''
+
+    if not 'pdf' in file_name:
+        logger.warning(f'File {file_name} is not a PDF file, skipping it from read_pdf function!')
+        return
+    
     destination = resolve_file_name(file_name,subfolder)
-    logger.info(f'Attempting to read pdf from read_pdf function with a destionation {destination}')
+    logger.info(f'Attempting to read pdf from read_pdf function with a destination {destination}')
     to_return = ''
     try:
         reader = PdfReader(destination)
@@ -82,13 +88,15 @@ def read_pdf(file_name,subfolder='inputs',echo=False):
     if echo: print(f'Attempting to read pdf from read_pdf function with a destionation {destination}')
     for page in reader.pages:
         if echo: print(page.extract_text())
-        to_return+=page.extract_text()
+        to_return+=page.extract_text() # Pages usually have '\n' and ' ' characters between them
     return to_return
 
 def read_all_pdfs(subfolder:str='inputs',echo=False):
     '''Takes in the name of the subfolder, and returns all the text from all the files in a list,
     each member of a list being complete text of a file.'''
-    return [read_pdf(f,subfolder=subfolder,echo=True) for f in os.listdir(subfolder) if os.path.isfile(os.path.join(subfolder,f))]
+    
+    for_return = [read_pdf(f,subfolder=subfolder,echo=echo) for f in os.listdir(subfolder) if os.path.isfile(os.path.join(subfolder,f))]
+    return for_return
     
 def find_train_num(text:str,fleet:str)->str:
     '''Returns a frist appearance of a train number belonging to a given fleet from a given text.
@@ -104,10 +112,9 @@ def find_train_num(text:str,fleet:str)->str:
     try:
         to_return = results[0]
     except IndexError:
-        logger.error(f'In function find_train_num Index error on to_return={results},returning empty string.')
-        return ""
+        raise IndexError(f'In function find_train_num Index error on to_return={results},returning empty string.')
         
-    return results[0]
+    return to_return
 
 def extract_between_strings(text,string1,string2):
     '''Extracts text that is contained between string1 and string2 (ordered)'''
