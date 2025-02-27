@@ -14,7 +14,7 @@ class TestMyiolibpy(ut.TestCase):
     def test_load_config(self):
         self.assertEqual(lib.load_config('dummyconfig.yaml','scriptlibraries\\tests'),('2','1','3','4',5,6,7,False,True))
 
-    def test_resolve_file_name(self):
+    def test_resolve_file_name(self): # Many tests are windows specific.
         self.assertEqual(lib.resolve_file_name('A','B'),"B\\A")
         self.assertEqual(lib.resolve_file_name('the_underscored','underscored_too'),'underscored_too\\the_underscored')
         self.assertEqual(lib.resolve_file_name('file',''),'file')
