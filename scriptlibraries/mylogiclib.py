@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 import selenium.common.exceptions as sce
-import csv
+import sys
 import time
 import re
 
@@ -85,6 +85,9 @@ def extract_between_strings(text:str,string1,string2)->list[str]:
         logger.debug("String2 was empty, so the alternative RegEx statement is being used.")
     return re.findall(pattern, text, re.DOTALL)
 
-def test():
-    print("Hello, world from mylogiclib!")
-    logger.debug("Hello, world from mylogiclib!")
+def setup_logging(logging_level,log_to_console):
+    '''Makes log messages appear in the console, in addition to standard file output.'''
+    if log_to_console:
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    if logging_level == 'ERROR':
+        logger.level = logging.ERROR

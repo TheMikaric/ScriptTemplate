@@ -1,6 +1,6 @@
 import logging
 import scriptlibraries.mylogiclib as logiclib
-import re
+import sys
 
 logging.basicConfig(
         level=logging.ERROR,
@@ -26,18 +26,20 @@ def start_driver(username,password,mode,platform,short_sleep=1,timeout=10):
         '''
     return logiclib.start_driver(username,password,mode,platform,short_sleep=short_sleep,timeout=timeout)
 
+def find_train_num(text:str,fleet:str)->str:
+    '''Returns a frist appearance of a train number belonging to a given fleet from a given text.
+    Supported fleets: Desiro, Mireo, ABY, FLIRT'''
+    return logiclib.find_train_num(text=text,fleet=fleet)
+
 def extract_between_strings(text,string1,string2):
     '''Extracts text that is contained between string1 and string2 (ordered)'''
     return logiclib.extract_between_strings(text=text,string1=string1,string2=string2)
 
-def export_to_csv(data: list[list[str]],column_names: list[str]=[""],file_name:str='output.csv',subfolder:str='outputs',mode:str='a'):
-    '''Takes in the column names and data to write to the csv file.
-    Each individual list within data input is a row, and its elements are individual elements
-    Mode options: 'a' for append, or add to the end of already existing .csv, 'w' for write to overwrite existing contents '''
 
-    return logiclib.export_to_csv(column_names=column_names,data=data,file_name=file_name,subfolder=subfolder,mode=mode)
-
-def test():
-    print('Hello, world from mainlogic!')
-    logger.debug('Hello, world from mainlogic!')
-    logiclib.test()
+def setup_logging(logging_level,log_to_console):
+    '''Makes log messages appear in the console, in addition to standard file output.'''
+    if log_to_console:
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    if logging_level == 'ERROR':
+        logger.level = logging.ERROR
+    logiclib.setup_logging(logging_level,log_to_console)
