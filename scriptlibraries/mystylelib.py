@@ -1,4 +1,5 @@
 import logging
+import sys
 
 logging.basicConfig(
         level=logging.ERROR,
@@ -9,6 +10,9 @@ logging.basicConfig(
 logger = logging.getLogger('mystylelib')
 logger.level = logging.ERROR
 
-def test():
-    print("Hello wrold from mystylelib!")
-    logger.debug("Hello wrold from mystylelib!")
+def setup_logging(logging_level,log_to_console):
+    '''Makes log messages appear in the console, in addition to standard file output.'''
+    if log_to_console:
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    if logging_level == 'ERROR':
+        logger.setLevel(logging.ERROR)

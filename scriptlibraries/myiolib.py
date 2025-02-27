@@ -3,17 +3,17 @@ import yaml
 import os
 from pypdf import PdfReader
 import csv
+import sys
 
 logging.basicConfig(
         level=logging.ERROR,
         format='%(asctime)s - %(name)10s - %(levelname)10s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         filename='logs/main.log')
-
 logger = logging.getLogger('IO')
 logger.level = logging.DEBUG
 
-def load_config(file_name='config.yaml', subfolder=''):
+def load_config(file_name:str='config.yaml', subfolder:str=''):
         '''Loads a config file into memory and returns its values.
         
         Inputs:
@@ -56,9 +56,9 @@ def resolve_file_name(file_name:str,subfolder:str)->str:
         logger.warning(f'No subfolder (string "") for the resolve_file_name with file_name={file_name} provided!')
         return file_name
     else:
-        return f'{subfolder}\{file_name}'
+        return os.path.join(subfolder,file_name)
 
-def read_pdf(file_name,subfolder='inputs',echo=False):
+def read_pdf(file_name:str,subfolder:str='inputs',echo=False):
     '''Takes in the name of the file and its subfolder within the script, and returns all text contained in the pdf.
     Returns None in the event that a file isn't a pdf file.'''
 
@@ -73,7 +73,9 @@ def read_pdf(file_name,subfolder='inputs',echo=False):
         reader = PdfReader(destination)
     except FileNotFoundError:
         raise FileNotFoundError('File not found in read_pdf function, even after resolving file name {destination}.')
+    
     if echo: print(f'Attempting to read pdf from read_pdf function with a destionation {destination}')
+
     for page in reader.pages:
         if echo: print(page.extract_text())
         to_return+=page.extract_text() # Pages usually have '\n' and ' ' characters between them
@@ -98,3 +100,10 @@ def export_to_csv(data: list[list[str]],column_names: list[str]=[""],file_name:s
         if mode == 'w': 
             writer.writerow(column_names) # Only write column names if we are making a new file
         writer.writerows(data)
+
+def setup_logging(logging_level,log_to_console):
+    '''Makes log messages appear in the console, in addition to standard file output.'''
+    if log_to_console:
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    if logging_level == 'ERROR':
+        logger.level = logging.ERROR

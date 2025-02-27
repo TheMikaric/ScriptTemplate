@@ -1,5 +1,6 @@
 import logging
 import scriptlibraries.mystylelib as stylelib
+import sys
 
 logging.basicConfig(
         level=logging.ERROR,
@@ -10,7 +11,10 @@ logging.basicConfig(
 logger = logging.getLogger('UI')
 logger.level = logging.ERROR
 
-def test():
-    print("Hello, world from ui!")
-    logger.debug("Hello, world from ui!")
-    stylelib.test()
+def setup_logging(logging_level,log_to_console):
+    '''Makes log messages appear in the console, in addition to standard file output.'''
+    if log_to_console:
+        logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    if logging_level == 'ERROR':
+        logger.setLevel(logging.ERROR)
+    stylelib.setup_logging(logging_level,log_to_console)

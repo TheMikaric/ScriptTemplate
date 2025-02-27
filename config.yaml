@@ -20,5 +20,5 @@ persistance:
   boom_delay: 2 # Determines how many seconds the script will wait because of BOOM/AMIGO instablity
 
 logging:
-  level: INFO # Options: DEBUG, INFO, ERROR; this setting controls how detailed the logs are.
+  level: DEBUG # Options: DEBUG or ERROR; this setting controls how detailed the logs are.
   to_console: true # Options: true, false; controls whether the logs are just printed to the file or also printed to the console.
