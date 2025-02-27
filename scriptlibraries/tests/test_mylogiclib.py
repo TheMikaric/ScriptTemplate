@@ -11,7 +11,7 @@ import mylogiclib as lib
 
 class TestMylogiclibpy(ut.TestCase):
 
-    def test_find_train_num(self):
+    def test_find_train_num(self): # Test only the cases you actually might encounter during the work
         self.assertEqual(lib.find_train_num('Moja vozic 2463.001 najjaci ','Desiro'),'2463.001')
         self.assertEqual(lib.find_train_num('Ne ipak je vozic ET1.11 najjaci na svetu','aby'),'ET1.11')
         with self.assertRaises(NameError):
