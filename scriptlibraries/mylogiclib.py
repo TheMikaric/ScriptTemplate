@@ -20,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger('logiclib')
 logger.setLevel(logging.DEBUG)
 
-def start_driver(username,password,mode:str,platform:str,short_sleep=1,timeout=10): 
+def start_driver(username:str,password:str,mode:str,platform:str,timeout=10,delay=1,override_link:str=None): 
     '''Starts up Chrome browser, logins to Amigo and returns driver
         
         Inputs:
@@ -37,15 +37,19 @@ def start_driver(username,password,mode:str,platform:str,short_sleep=1,timeout=1
 
     chrome_options = Options()
     driver = webdriver.Chrome(options=chrome_options) # Opens chrome window
-    extension = '-training' if mode=="training" else ''
-    driver.get(f'https://amigo{extension}.eucorail.com/{platform}') #Open the web page
+
+    extension = '-training' if platform=="training" else ''
+    if override_link: 
+        logger.debug(f'Overriding the link with {override_link}')
+        driver.get(override_link)
+    else: driver.get(f'https://amigo{extension}.eucorail.com/{mode}') #Open the web page
     action_chains = ActionChains(driver)
     logger.debug("Driver made action chains")
 
     #Log in
     try:
         WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.ID,"un"))).send_keys(username)
-        time.sleep(short_sleep)
+        time.sleep(delay)
         WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.NAME,"Password"))).send_keys(password)
         driver.find_element(By.CLASS_NAME, "login-button").click() #Click login button to actually login
         logger.info("Logged in")
@@ -57,6 +61,43 @@ def start_driver(username,password,mode:str,platform:str,short_sleep=1,timeout=1
     logger.debug("Exiting start_driver function")
     return driver,action_chains
 
+def click(driver,xpath:str,double_click:bool=False,max_tries=15,timeout=10,delay=1):
+    '''This function clicks on the XPATH of specified element once or twice with
+    given persistance. Useful due to Amigo/Boom instability. 
+    Raises TimeoutError if it time outs.'''
+    logger.debug(f'Entered click function with xpath={xpath}, max_tries={max_tries}, double_click={double_click}, timeout={timeout}, delay={delay}')
+
+    for i in range(max_tries):
+        try:
+            if double_click:
+                time.sleep(delay)
+                actionChains = ActionChains(driver)
+                actionChains.double_click(driver.find_element(By.XPATH, xpath)).perform()
+            else:
+                WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.XPATH, xpath))).click()
+            return
+        except sce.TimeoutException:
+            logger.info(f'Timeout exception on click function! Try number {i}')
+        time.sleep(delay)
+
+    raise TimeoutError(f'Failed to click on the element with xpath={xpath} after {max_tries} tries.')
+
+def read_value(driver,xpath:str,max_tries=15,timeout=10,delay=1)->str:
+    '''Reads value attribute from the element of specified XPath and returns it as a string'''
+    logger.debug(f'Entered read_value function with xpath={xpath}, max_tries={max_tries}, timeout={timeout}, delay={delay}')
+    
+    for i in range(max_tries):
+        try:
+            WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.XPATH, xpath)))
+            element = driver.find_element(By.XPATH, xpath)
+            logger.debug(f'Element found with xpath={xpath}')
+            return element.text
+        except sce.TimeoutException:
+            logger.info(f'Timeout exception on read_value function! Try number {i}')
+        time.sleep(delay)
+            
+        raise TimeoutError(f'Failed to read value of the element with xpath={xpath} after {max_tries} tries.')
+    
 def find_train_num(text:str,fleet:str)->str:
     '''Returns a frist appearance of a train number belonging to a given fleet from a given text.
     Supported fleets: Desiro, Mireo, ABY, FLIRT'''
@@ -90,4 +131,4 @@ def setup_logging(logging_level,log_to_console):
     if log_to_console:
         logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
     if logging_level == 'ERROR':
-        logger.level = logging.ERROR
+        logger.setLevel(logging.ERROR)

@@ -50,5 +50,5 @@ def setup_logging(logging_level,log_to_console):
     if log_to_console:
         logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
     if logging_level == 'ERROR':
-        logger.level = logging.ERROR
+        logger.setLevel(logging.ERROR)
     iolib.setup_logging(logging_level,log_to_console)

@@ -40,11 +40,16 @@ def load_config(file_name:str='config.yaml', subfolder:str=''):
         # this return should be updated if the structure
         # of config.yaml updates
         return \
-        config['boom_settings']['mode'],config['boom_settings']['platform'],\
+        config['boom_settings']['mode'],config['boom_settings']['platform'],config['boom_settings']['max_rows'],\
         config['credentials']['username'], config['credentials']['password'],\
+        config['boom_settings']['override_link'],\
         config['persistance']['max_tries'], config['persistance']['timeout'], config['persistance']['boom_delay'],\
-        config['logging']['level'], config['logging']['to_console']\
-        
+        config['logging']['level'], config['logging']['to_console'],\
+        config['boom_xpaths']['maintenance_presets'],config['boom_xpaths']['table_row_prefix'],config['boom_xpaths']['table_row_suffix'],\
+        config['boom_xpaths']['options_menu'],config['boom_xpaths']['select_checklist'],config['boom_xpaths']['code'],\
+        config['boom_xpaths']['searchbox'],config['boom_xpaths']['search_button'],config['boom_xpaths']['confirm_checklist'],\
+        config['boom_xpaths']['page_scroll']  
+      
 def resolve_file_name(file_name:str,subfolder:str)->str:
     '''This function joins file_name and subfolder strings with character '\' ,
     and returns just the file_name if empty or no subfolder is provided'''
@@ -106,4 +111,4 @@ def setup_logging(logging_level,log_to_console):
     if log_to_console:
         logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
     if logging_level == 'ERROR':
-        logger.level = logging.ERROR
+        logger.setLevel(logging.ERROR)
