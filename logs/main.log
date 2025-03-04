@@ -14,3 +14,9 @@
 2025-02-27 10:57:20 -         IO -      DEBUG - Entered the function load_config with parameters file_name=config.yaml and subfolder=
 2025-02-27 10:57:20 -         IO -      DEBUG - Config file loaded successfully
 2025-02-27 10:57:20 -         IO -      DEBUG - Exiting the load_config function
+2025-03-04 11:55:59 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jedna string2=maca
+2025-03-04 11:55:59 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=nijedna string2=maca
+2025-03-04 11:55:59 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=vise string2=struka
+2025-03-04 11:55:59 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=a string2=c
+2025-03-04 11:55:59 -   logiclib -      DEBUG - Etntered extract_between_strings function with text and string1=jaja string2=
+2025-03-04 11:55:59 -   logiclib -      DEBUG - String2 was empty, so the alternative RegEx statement is being used.
