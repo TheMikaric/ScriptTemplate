@@ -52,3 +52,7 @@ def setup_logging(logging_level,log_to_console):
     if logging_level == 'ERROR':
         logger.setLevel(logging.ERROR)
     iolib.setup_logging(logging_level,log_to_console)
+
+def export_to_xslsx(data: list[list[str]],file_name:str='output.xlsx',subfolder:str='outputs',bold_header:bool=False):
+    '''Takes in the data to write to the xlsx file. Each individual list within data input is a row, and its elements are individual elements'''
+    return iolib.export_to_xslsx(data=data,file_name=file_name,subfolder=subfolder,bold_header=bold_header)
