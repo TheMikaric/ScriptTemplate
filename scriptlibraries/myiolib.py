@@ -4,6 +4,8 @@ import os
 from pypdf import PdfReader
 import csv
 import sys
+import openpyxl
+from openpyxl.styles import Font
 
 logging.basicConfig(
         level=logging.ERROR,
@@ -40,16 +42,11 @@ def load_config(file_name:str='config.yaml', subfolder:str=''):
         # this return should be updated if the structure
         # of config.yaml updates
         return \
-        config['boom_settings']['mode'],config['boom_settings']['platform'],config['boom_settings']['max_rows'],\
+        config['boom_settings']['mode'],config['boom_settings']['platform'],\
         config['credentials']['username'], config['credentials']['password'],\
-        config['boom_settings']['override_link'],\
         config['persistance']['max_tries'], config['persistance']['timeout'], config['persistance']['boom_delay'],\
-        config['logging']['level'], config['logging']['to_console'],\
-        config['boom_xpaths']['maintenance_presets'],config['boom_xpaths']['table_row_prefix'],config['boom_xpaths']['table_row_suffix'],\
-        config['boom_xpaths']['options_menu'],config['boom_xpaths']['select_checklist'],config['boom_xpaths']['code'],\
-        config['boom_xpaths']['searchbox'],config['boom_xpaths']['search_button'],config['boom_xpaths']['confirm_checklist'],\
-        config['boom_xpaths']['page_scroll']  
-      
+        config['logging']['level'], config['logging']['to_console']
+
 def resolve_file_name(file_name:str,subfolder:str)->str:
     '''This function joins file_name and subfolder strings with character '\' ,
     and returns just the file_name if empty or no subfolder is provided'''
@@ -72,7 +69,7 @@ def read_pdf(file_name:str,subfolder:str='inputs',echo=False):
         return
     
     destination = resolve_file_name(file_name,subfolder)
-    logger.info(f'Attempting to read pdf from read_pdf function with a destination {destination}')
+    logger.debug(f'Attempting to read pdf from read_pdf function with a destination {str(destination)}')
     to_return = ''
     try:
         reader = PdfReader(destination)
@@ -94,7 +91,7 @@ def read_all_pdfs(subfolder:str='inputs',echo=False):
     for_return = [read_pdf(f,subfolder=subfolder,echo=echo) for f in os.listdir(subfolder) if os.path.isfile(os.path.join(subfolder,f))]
     return for_return
 
-def export_to_csv(data: list[list[str]],column_names: list[str]=[""],file_name:str='output.csv',subfolder:str='outputs',mode:str='a'):
+def export_to_csv(data: list[list[str]],column_names: list[str]=None,file_name:str='output.csv',subfolder:str='outputs',mode:str='a'):
     '''Takes in the column names and data to write to the csv file.
     Each individual list within data input is a row, and its elements are individual elements
     Mode options: 'a' for append, or add to the end of already existing .csv, 'w' for write to overwrite existing contents '''
@@ -102,10 +99,37 @@ def export_to_csv(data: list[list[str]],column_names: list[str]=[""],file_name:s
 
     with open(resolve_file_name(file_name,subfolder), mode=mode, newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        if mode == 'w': 
+        if mode == 'w':
             writer.writerow(column_names) # Only write column names if we are making a new file
-        writer.writerows(data)
+        
+        if data:
+            writer.writerows(data)
+        else:
+            logger.warning('No data provided to export_to_csv function! Writing only column names to file.')
+            writer.writerow(column_names)
 
+def export_to_xslsx(data: list[list[str]],file_name:str='output.xlsx',subfolder:str='outputs',bold_header:bool=False):
+    '''Takes in the data to write to the xlsx file. Each individual list within data input is a row, and its elements are individual elements'''
+    logger.debug(f'Entered function export_to_xslsx with parameters data={data}, file_name={file_name}, subfolder={subfolder}')
+    
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    for row in data:
+        ws.append(row)
+
+    if bold_header:
+        for cell in ws["1:1"]:
+            cell.font = Font(bold=True)
+    
+    try:
+        wb.save(resolve_file_name(file_name,subfolder))
+    except FileNotFoundError:
+        logger.debug('Directory not found in export_to_xlsx function, creating a new directory with a name={subfolder}')
+        os.mkdir(subfolder)
+        wb.save(resolve_file_name(file_name,subfolder))
+    except PermissionError:
+        logger.error('Permission to save file denied, please close the relevant xlsx!')
+        
 def setup_logging(logging_level,log_to_console):
     '''Makes log messages appear in the console, in addition to standard file output.'''
     if log_to_console:
